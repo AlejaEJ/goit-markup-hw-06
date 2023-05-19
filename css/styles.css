@@ -260,6 +260,10 @@ a {
     height: 11px;
 }
 
+.backdrop .modal-form .modal-button:hover {
+    fill:var(--accent-color);
+}
+
 .backdrop .modal-form .modal-form_title {
     color: var(--primary-black-color);
     font-weight: 700;
