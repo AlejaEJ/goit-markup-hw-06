@@ -260,7 +260,8 @@ a {
     height: 11px;
 }
 
-.backdrop .modal-form .modal-button:hover {
+.backdrop .modal-form .modal-button:hover,
+.backdrop .modal-form .modal-button:focus {
     fill:var(--accent-color);
 }
 
