@@ -288,11 +288,13 @@ a {
     outline: none;
 }
 
-.backdrop .modal-form .modal-form_label .modal-form_input:focus {
+.backdrop .modal-form .modal-form_label .modal-form_input:focus,
+.backdrop .modal-form .modal-form_label .modal-form_input:hover {
     border: 1px solid var(--accent-color);
 }
 
-.backdrop .modal-form .modal-form_label .modal-form_input:focus + .modal-form_icon {
+.backdrop .modal-form .modal-form_label .modal-form_input:focus + .modal-form_icon,
+.backdrop .modal-form .modal-form_label .modal-form_input:hover + .modal-form_icon {
     fill:var(--accent-color);
 }
 
@@ -300,6 +302,7 @@ a {
     width: 18px;
     height: 18px;
     position: absolute;
+    fill: var(--primary-black-color);
 
     top: 35px;
     bottom: 14px;
@@ -321,6 +324,49 @@ a {
     padding: 12px 16px;
     outline: none;
 }
+
+.backdrop .modal-form .modal-form_checkoption {
+    display: block;
+    position: relative;
+    padding-left: 40px;
+    margin-top: 20px;
+}
+
+.backdrop .modal-form .modal-form_checkoption .modal-form_checkbox {
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    opacity: 0;
+}
+
+.backdrop .modal-form .modal-form_checkoption .modal-form_box {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 16px;
+    height: 15px;
+    overflow: hidden;
+    border-radius: 2px;
+    background-color: var(--primary-white-color);
+    border: 2px solid var(--primary-black-color);
+   
+    top: 4px;
+    left: 20px;
+}
+
+.backdrop .modal-form .modal-form_checkoption .modal-form_checkbox:checked + .modal-form_box {
+    background-color: var(--accent-color);
+    border: 2px solid var(--accent-color);
+}
+
+.backdrop .modal-form .modal-form_checkoption .modal-form_iconcheck {
+    width: 11px;
+    height: 8px;
+}
+
+
+
 
 /* Hero Section */
 .hero-section {
