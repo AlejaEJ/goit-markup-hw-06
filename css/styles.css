@@ -309,10 +309,6 @@ a {
     left: 15px;
 }
 
-.backdrop .modal-form label {
-    margin-bottom: 20px;
-}
-
 .backdrop .modal-form label .modal-form_comments {
     display: block;
     resize: none;
@@ -328,14 +324,14 @@ a {
 .backdrop .modal-form .modal-form_checkoption {
     display: block;
     position: relative;
-    padding-left: 40px;
+    padding-left: 42px;
     margin-top: 20px;
 }
 
 .backdrop .modal-form .modal-form_checkoption .modal-form_checkbox {
     width: 1px;
     height: 1px;
-    margin: -1px;
+    margin: -2px;
     opacity: 0;
 }
 
@@ -352,7 +348,7 @@ a {
     border: 2px solid var(--primary-black-color);
    
     top: 4px;
-    left: 20px;
+    left: 16px;
 }
 
 .backdrop .modal-form .modal-form_checkoption .modal-form_checkbox:checked + .modal-form_box {
@@ -360,12 +356,19 @@ a {
     border: 2px solid var(--accent-color);
 }
 
-.backdrop .modal-form .modal-form_checkoption .modal-form_iconcheck {
+.backdrop .modal-form .modal-form_checkoption .modal-form_box .modal-form_iconcheck {
     width: 11px;
     height: 8px;
 }
 
-
+.backdrop .modal-form .modal-form_button {
+    position: absolute;
+    width: 200px;
+    height: 50px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); 
+    align-items: center;
+    left: 164px;
+}
 
 
 /* Hero Section */
